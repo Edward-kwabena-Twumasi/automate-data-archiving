@@ -7,10 +7,7 @@ const {Sequelize , Model, DataTypes}  = require('sequelize');
 const sequelize = new Sequelize(db_url,{
     
     dialect: 'postgres',
-      port: 5432,
-      dialectOptions: {
-        ssl: true
-      }
+      port: 5432
 
   });
 
