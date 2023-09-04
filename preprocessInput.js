@@ -255,8 +255,8 @@ for (const k in req_times24hr) {
     let destinations=`${palceCordinates.origin_latitude}%2c${palceCordinates.origin_longitude}`;
     let origins=`${palceCordinates.destination_latitude}%2c${palceCordinates.destination_longitude}`;
     //let baseUrl="https://api.distancematrix.ai/maps/api/distancematrix/json";
-    let baseUrl="https://maps.googleapis.com/maps/api/distancematrix/json";
-    let thisRequest=`${baseUrl}?destinations=${destinations}&origins=${origins}&mode=${mode}&traffic_mode=${trafficMode}&departure_time=today&key=${key}`;
+    let baseUrl="https://maps.googleapis.com/maps/api/directions/json";
+    let thisRequest=`${baseUrl}?destination=${destinations}&origin=${origins}&departure_time=today&key=${key}`;
 
     return thisRequest;
    
