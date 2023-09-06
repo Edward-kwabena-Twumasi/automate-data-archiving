@@ -10,6 +10,7 @@ const sequelize = new Sequelize(db_url,{
       port: 5432
 
   });
+  
 
   //Add this to connect outside render.com
 //   dialectOptions: {
