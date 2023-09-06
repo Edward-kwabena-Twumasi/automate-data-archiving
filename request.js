@@ -12,6 +12,8 @@ exports.getTrafficInfo = async function getTrafficInfo(requestString, requestId,
       //Try making a request to distance matrix api using axios
       const responseJson = await axios.get(requestString);
      
+      console.log(responseJson)
+
       var traffic_data = responseJson.data["routes"][0]["legs"][0]
       
       let distance_km ,duration_m, duration_traffic_m, destinations, origins;
